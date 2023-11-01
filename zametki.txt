@@ -1,0 +1,19 @@
+При создании проекта мы создаем виртуальное окружение
+python3 -m venv {название врит.окрж}
+
+Чтобы активировать вирт. окруж. вводим след команду
+source venv/bin/activate
+
+Чтобы скачать библиотеку нужно ввести данную команду
+pip install {название модуля}
+
+Чтобы скачать все модули записанные в какомлибо файле нжно ввести следующее
+pip instfll -r {название файла}
+
+responce = requests.get('https://enter.kg/computers/noutbuki_bishkek')
+print(responce.text)
+
+soup = BS(responce.text, 'lxml')
+soup.find('div', class_='item')
+soup.find_all()
+soup.get()
